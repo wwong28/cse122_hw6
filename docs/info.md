@@ -19,3 +19,5 @@ The testbench (`test/tb.v`) is a self-checking Verilog testbench that tests all 
 
 No external hardware is required. To visualize the output, a 7-segment display can be connected to `uo_out[6:0]`.
 
+## GenAI Use
+Claude (Anthropic) was used to assist in developing the project idea, outlining the instructions, and suggesting the ideal structure for writing the Verilog design and testbench code. The AI helped generate the segment encodings for each digit and provided guidance on organizing the self-checking testbench. All code was reviewed and verified for correctness through local simulation.
