@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project implements a 7-segment display decoder. It takes a 4-bit binary input (representing digits 0–9) via `ui_in[3:0]` and outputs a 7-bit signal on `uo_out[6:0]` that controls which segments (a–g) of a 7-segment display are turned on. Each bit in the output corresponds to one segment of the display. For inputs greater than 9, all segments are turned off.
 
 ## How to test
 
-Explain how to use your project
+The testbench (`test/tb.v`) is a self-checking Verilog testbench that tests all valid digit inputs (0–9) as well as two invalid inputs (10 and 15) to verify the default case. For each input, it compares the actual output against the expected segment encoding and prints PASS or FAIL. All 12 test cases must pass for the design to be considered correct.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware is required. To visualize the output, a 7-segment display can be connected to `uo_out[6:0]`.
+
