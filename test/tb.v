@@ -1,5 +1,7 @@
 `timescale 1ns / 1ps
 
+`include "../src/tt_um_project.v"
+
 module tb;
 
   // Inputs
