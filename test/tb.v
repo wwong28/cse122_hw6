@@ -13,7 +13,7 @@ module tb;
   wire [7:0] uio_oe;
 
   // Instantiate the design
-  tt_um_tt_um_project uut (
+  tt_um_project uut (
     .ui_in(ui_in),
     .uo_out(uo_out),
     .uio_in(uio_in),
