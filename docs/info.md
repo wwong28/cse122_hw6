@@ -7,6 +7,7 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
+ <!-- trigger -->
 ## How it works
 
 This project implements a 7-segment display decoder. It takes a 4-bit binary input (representing digits 0–9) via `ui_in[3:0]` and outputs a 7-bit signal on `uo_out[6:0]` that controls which segments (a–g) of a 7-segment display are turned on. Each bit in the output corresponds to one segment of the display. For inputs greater than 9, all segments are turned off.
