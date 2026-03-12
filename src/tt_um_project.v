@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_example (
+module tt_um_project (
     input  wire [7:0] ui_in,    // Dedicated inputs - ui_in[3:0] is the 4-bit number (0-9)
     output wire [7:0] uo_out,   // Dedicated outputs - uo_out[6:0] drives segments a-g
     input  wire [7:0] uio_in,   // IOs: Input path
